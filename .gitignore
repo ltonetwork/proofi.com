@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules
+bower_components
+
+# Compiled
+dist
+dist/**/*
+
+# Editor
+.idea
+
+# OS Index files
+.DS_Store

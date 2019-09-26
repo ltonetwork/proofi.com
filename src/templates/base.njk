@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+{% set title = title %}
+{% set description = description %}
+{% set canonical = canonical %}
+{% set ogTitle = ogTitle %}
+{% set ogDescription = ogDescription %}
+{% set ogUrl = ogUrl %}
+
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+
+  <title>{{ title }}</title>
+  <link rel="canonical" href="/" />
+  <link rel="icon" href="/assets/favicon.png" sizes="32x32"/>
+  <meta name="description" content="Next Web Starter"/>
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ ogTitle }}" />
+  <meta property="og:description" content="{{ ogDescription }}" />
+  <meta property="og:url" content="/" />
+  <meta property="og:site_name" content="NextWebStarter" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="{{ ogDescription }}" />
+  <meta name="twitter:title" content="{{ title }}" />
+
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+
+<body>
+  {% include "partials/navigation.njk" %}
+
+  {% block content %}{% endblock %}
+
+
+  {% include "partials/footer.njk" %}
+
+  <script>window.lazyLoadOptions = { elements_selector: ".lazy" };</script>
+  <script src="/js/main.js"></script>
+  <script>
+    var animationData = {"v":"5.5.9","fr":29.9700012207031,"ip":0,"op":75.0000030548126,"w":1920,"h":1080,"nm":"main comp","ddd":0,"assets":[{"id":"image_0","w":1600,"h":1600,"u":"assets/animated/images/","p":"img_0.png","e":0},{"id":"image_1","w":1600,"h":1600,"u":"assets/animated/images/","p":"img_1.png","e":0},{"id":"image_2","w":1600,"h":1600,"u":"assets/animated/images/","p":"img_2.png","e":0},{"id":"comp_0","layers":[{"ddd":0,"ind":1,"ty":4,"nm":"Shape Layer 1","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[-158,800,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[-43.015,62.477],[0.981,44.979],[18.095,24.975],[8.736,0],[0,0]],"o":[[0,0],[0,0],[17.277,-25.094],[-1.047,-48],[-45.935,-63.401],[-11,0],[0,0]],"v":[[-92,70],[57,70],[174.829,1.292],[212,-106],[174.859,-206.975],[53,-274],[-96,-274]],"c":false},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":17,"s":[0]},{"t":32.0000013033867,"s":[95]}],"ix":1},"e":{"a":0,"k":100,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":127,"ix":5},"lc":2,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[958.047,-1],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Shape 1","np":4,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":17.0000006924242,"op":31.0000012626559,"st":-3.00000012219251,"bm":0},{"ddd":0,"ind":2,"ty":2,"nm":"check-shape.png","cl":"png","refId":"image_0","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":135,"ix":10},"p":{"a":0,"k":[738,770,0],"ix":2},"a":{"a":0,"k":[800,800,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"ip":0,"op":75.0000030548126,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":2,"nm":"p-shape.png","cl":"png","refId":"image_1","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[800,800,0],"ix":2},"a":{"a":0,"k":[800,800,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"ip":0,"op":17.0000006924242,"st":0,"bm":0}]}],"layers":[{"ddd":0,"ind":1,"ty":0,"nm":"p-shape.png Comp 1","cl":"png","refId":"comp_0","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.26],"y":[1]},"o":{"x":[0.298],"y":[0.001]},"t":13,"s":[0]},{"i":{"x":[0.502],"y":[1]},"o":{"x":[0.227],"y":[0]},"t":26,"s":[-150]},{"t":43.0000017514259,"s":[-135]}],"ix":10},"p":{"s":true,"x":{"a":1,"k":[{"i":{"x":[0.461],"y":[1]},"o":{"x":[0.023],"y":[0.167]},"t":13,"s":[960]},{"t":26.0000010590017,"s":[940]}],"ix":3},"y":{"a":1,"k":[{"i":{"x":[0.462],"y":[1]},"o":{"x":[0.023],"y":[0.167]},"t":13,"s":[540]},{"t":26.0000010590017,"s":[520]}],"ix":4}},"a":{"a":0,"k":[800,800,0],"ix":1},"s":{"a":0,"k":[53,53,100],"ix":6}},"ao":0,"w":1600,"h":1600,"ip":0,"op":75.0000030548126,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":2,"nm":"stamp-shape.png","cl":"png","refId":"image_2","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.571],"y":[1]},"o":{"x":[0.498],"y":[0]},"t":13,"s":[0]},{"i":{"x":[0.521],"y":[1]},"o":{"x":[0.242],"y":[0]},"t":26,"s":[50]},{"t":43.0000017514259,"s":[36]}],"ix":10},"p":{"a":0,"k":[960,542,0],"ix":2},"a":{"a":0,"k":[800,800,0],"ix":1},"s":{"a":0,"k":[53,53,100],"ix":6}},"ao":0,"ip":0,"op":75.0000030548126,"st":0,"bm":0}],"markers":[]};
+    var params = {
+        container: document.getElementById('lottie'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        animationData: animationData
+    };
+
+    var anim;
+
+    anim = lottie.loadAnimation(params);
+
+</script>
+<script>
+$(".modal-button").click(function() {
+  var target = $(this).data("target");
+  $("html").addClass("is-clipped");
+  $(target).addClass("is-active");
+});
+
+$(".modal-close").click(function() {
+  $("html").removeClass("is-clipped");
+  $(this).parent().removeClass("is-active");
+});
+    </script>
+</body>
+</html>

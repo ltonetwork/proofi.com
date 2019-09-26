@@ -1,0 +1,45 @@
+{% set title = 'Proofi' %}
+{% set description = 'The standard for online digital transactions' %}
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+  <section class="hero stamp-bg">
+    <div class="hero-body">
+      <div class="container">
+       <div class="columns inverted-mobile is-vcentered">
+       <div class="column is-one-third">
+        <h1 class="">Don't trust, <br> verify</h1>
+          <h3 class="hero-sub muted">Spoofing, phishing and online fraud ends here. Free Proofi beta out now!</h3>
+<!--
+        <div class="btn-container">
+          <button class="button is-primary" id="showModal">Sign up - it's free!</button>
+        </div>
+-->
+           </div>
+           <div class="column is-two-thirds">
+           <div id="lottie" class="is-hidden-mobile"></div>
+           </div>
+           <div class="modal">
+              <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                      <p class="modal-card-title muted">Sign up - it's free!</p>
+                      <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                        </section>
+                    <footer class="modal-card-foot">
+                      <button class="button is-success">Save changes</button>
+                      <button class="button">Cancel</button>
+                    </footer>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}
