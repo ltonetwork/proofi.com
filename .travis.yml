@@ -1,0 +1,38 @@
+language: node_js
+
+node_js:
+  - '10.16.0'
+
+sudo: false
+
+# Add your branch here to have it tested and deployed
+branches:
+  only:
+    - master
+
+before_install:
+  # Configure Git
+  - git config --global user.email "travis-ci@legalthings.net"
+  - git config --global user.name "Travis CI"
+
+  # Get all tags of git repo
+  - git fetch origin 'refs/tags/*:refs/tags/*'
+
+script:
+  - test "$TRAVIS_PULL_REQUEST" == "false" || npm run build:prod:fast
+  - test "$TRAVIS_BRANCH" != 'master' -o "$TRAVIS_PULL_REQUEST" != "false" || npm run build:prod
+
+before_deploy:
+  # Set environment variables for Elastic Beanstalk deploy
+  - echo 'origin.proofi.com' > dist/CNAME
+  - export TAG=$(git tag --contains)
+
+deploy:
+  - provider: pages
+    local_dir: dist/
+    skip_cleanup: true
+    github_token:
+      secure: "WE0hXmWsbZmRfiXjRdgb/43Eb9xwLYtCjsTsCT7sc7LEqCe/eK2WCQG6fnfJ0+pCs1wOkGPp/TYXbrRtzz0VeIQX4LZy5tFCN9yN92FS0AFqlci9FPSPFiX5eOZCmg3Sb9XIevt0a+7wLL8tbP72obqB/LfORoGHwhGhB+mmvWOiUiM8ARQnP7M2afxisbOC7qA1OOCx7Q+LfiRoJupwdcUBapMWkUCG08LuHtM4CQGTzBGdkNaeWIABH90atT3xo8CfxDSg9Qnr5aoZHbXsltp9GS96PukWZnicBbAFuGzgpepDS5PsDJa51cMnDJv+Z+9n8r17TK49zLSHSYZqYCY2cXAImbdcl4QK7AKPBi0fzAIvBWjm7MIvQxEOSDG9iwfFUC12w1N/pFbl3mtXh38MDeuYtOvjNREDTkE1L5uEWBjwX9L4svebmZo0ISSD1I/XtW0ZF3lRBlT4tkFZCjcRyJL64uNYl+s8q5v2AUKglbSOrO8SG8wxkVfsPr64JNICdVZgPNqENLc+wwaFoRupZOUxDYgadlpWAdrHvexXICeHH/MkFnoYpC1WAvP7plqUNowqrxVJYKN6rI8OP4aAErK/pQirLxa/T19YDT3UUMQwtOhqaaVvJboNvaciqTviZncfw8RArJRGSHCX/ZEGhIBaZ3mzzJkEgqqU+3k="
+    keep_history: true
+    on:
+      branch: master
