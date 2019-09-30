@@ -22,11 +22,6 @@ script:
   - test "$TRAVIS_PULL_REQUEST" == "false" || npm run build:prod:fast
   - test "$TRAVIS_BRANCH" != 'master' -o "$TRAVIS_PULL_REQUEST" != "false" || npm run build:prod
 
-after_success:
-  # Bump version
-  - npm install mversion -g
-  - test "$TRAVIS_BRANCH" != 'master' -o "$TRAVIS_PULL_REQUEST" != "false" || test -n "$(git tag --contains)" || bin/bump-version
-
 before_deploy:
   # Set environment variables for Elastic Beanstalk deploy
   - echo 'origin.proofi.com' > dist/CNAME
