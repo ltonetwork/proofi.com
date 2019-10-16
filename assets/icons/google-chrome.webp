@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>google-chrome-1 (1)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="49.941%" y1="0.144%" x2="49.941%" y2="100.032%" id="linearGradient-1">
+            <stop stop-color="#81B4E0" offset="0%"></stop>
+            <stop stop-color="#0C5A94" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.137%" x2="50%" y2="71.693%" id="linearGradient-2">
+            <stop stop-color="#F06B59" offset="0%"></stop>
+            <stop stop-color="#DF2227" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="26.35%" y1="81.958%" x2="49.137%" y2="38.282%" id="linearGradient-3">
+            <stop stop-color="#388B41" offset="0%"></stop>
+            <stop stop-color="#4CB749" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="58.397%" y1="85.352%" x2="35.72%" y2="12.208%" id="linearGradient-4">
+            <stop stop-color="#E4B022" offset="0%"></stop>
+            <stop stop-color="#FCD209" offset="30%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.999%" y1="96.296%" x2="49.999%" y2="-2.466%" id="linearGradient-5">
+            <stop stop-color="#000000" stop-opacity="0.15" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.06" offset="30%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.03" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="70.996%" y1="8.54%" x2="28.885%" y2="78.539%" id="linearGradient-6">
+            <stop stop-color="#000000" stop-opacity="0.15" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.06" offset="30%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.03" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="39.927%" y1="66.916%" x2="47.694%" y2="52.767%" id="linearGradient-7">
+            <stop stop-color="#000000" stop-opacity="0.15" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.06" offset="30%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.03" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Registration-funnel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01---Proofi-landing" transform="translate(-124.000000, -612.000000)" fill-rule="nonzero">
+            <g id="hero">
+                <g id="Group-2" transform="translate(100.000000, 336.000000)">
+                    <g id="Group" transform="translate(2.000000, 261.000000)">
+                        <g id="google-chrome-1-(1)" transform="translate(22.000000, 15.000000)">
+                            <circle id="Oval" fill="#FFFFFF" cx="14.9673" cy="15.0375" r="14.7027"></circle>
+                            <path d="M24.3235088,17.7105263 C24.3235088,12.5431579 20.1345614,8.35421052 14.9673684,8.35421052 C9.80000001,8.35421052 5.61105264,12.5431579 5.61105264,17.7105263 L8.28421053,17.7105263 C8.28421053,14.0194737 11.2763158,11.0273684 14.967193,11.0273684 C18.6580702,11.0273684 21.6501755,14.0194737 21.6501755,17.7105263" id="Path" fill-opacity="0.1" fill="#000000"></path>
+                            <circle id="Oval" fill-opacity="0.1" fill="#000000" cx="15.6357" cy="16.9086" r="5.079"></circle>
+                            <circle id="Oval" fill="url(#linearGradient-1)" cx="14.9673" cy="15.0372" r="5.4801"></circle>
+                            <path d="M28.3333333,8.35421052 C24.6535088,0.950701755 15.6687719,-2.06807018 8.26508772,1.61157895 C5.95657509,2.75882913 3.98350062,4.48286718 2.53701754,6.61666668 L8.5517544,17.0422807 C7.44421053,13.5215789 9.40035087,9.76929825 12.9210526,8.66157894 C13.5403049,8.46686007 14.1846034,8.36331843 14.8336842,8.35421052" id="Path" fill="url(#linearGradient-2)"></path>
+                            <path d="M2.53701754,6.61684212 C-2.06649123,13.484386 -0.231403509,22.7831579 6.63578946,27.3870176 C8.76049854,28.8113866 11.2147473,29.6675621 13.764386,29.8738597 L20.0466667,19.1812281 C17.6975439,22.0284211 13.4857895,22.4319298 10.6387719,20.0831579 C9.67173921,19.2854842 8.94853425,18.2319249 8.5517544,17.042807" id="Path" fill="url(#linearGradient-3)"></path>
+                            <path d="M13.7643859,29.8736842 C22.008421,30.496842 29.1968421,24.3189474 29.8203509,16.0749123 C30.0215139,13.4148554 29.508066,10.7493724 28.3331579,8.35438596 L14.8336842,8.35438596 C18.5242105,8.37140352 21.502807,11.377193 21.4857895,15.0682456 C21.4788498,16.5614867 20.9720834,18.0093994 20.0463158,19.1810526" id="Path" fill="url(#linearGradient-4)"></path>
+                            <path d="M2.53701754,6.61684212 L8.5517544,17.0424561 C8.10621921,15.5430151 8.20077288,13.934796 8.81894736,12.4978947 L2.80421053,6.21578946" id="Path" fill="url(#linearGradient-5)"></path>
+                            <path d="M13.7643859,29.8736842 L20.0466667,19.1810526 C19.0554017,20.3629635 17.6858991,21.1656983 16.1703509,21.4531579 L13.4970176,29.8736842" id="Path" fill="url(#linearGradient-6)"></path>
+                            <path d="M28.3333333,8.35421052 L14.8336842,8.35421052 C16.8671088,8.36366772 18.7856159,9.29838462 20.0463158,10.8938597 L28.6005263,8.75543859" id="Path" fill="url(#linearGradient-7)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
