@@ -2,6 +2,7 @@
 @import 'partials/typeface';
 @import 'partials/mixins/_media-queries';
 
+
 html {
     font-size: 18px;
     font-family: 'Nunito' !important;
@@ -17,20 +18,19 @@ body {
 }
 
 .footer {
-    background-color: #035945;
+    background-color: #14C39A;
     color: #fff;
-    max-height: 180px;
+    max-height: 140px;
 
     a {
-        color: #14C39A;
-        text-decoration: underline;
-        text-decoration-color: #14C39A;
+        color: #fff;
+        font-weight: 600;
     }
 }
 
 h1 {
     font-size: 64px !important;
-    line-height: 64px;
+    line-height: 66px;
     font-weight: 600;
     margin-bottom: 24px;
 
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.9rem !important;
+    font-size: 40px !important;
 
     @include responsive(phone) {
         font-size: 1.65rem !important;
@@ -71,13 +71,15 @@ h2 + h3 {
         padding: 200px;
 
         @include responsive(phone) {
-            padding: 160px;
+            padding: 20px;
+            margin-top: 80px;
         }
     }
 }
 
+
 .hero-sub {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .invisible {
@@ -193,14 +195,29 @@ h2 + h3 {
 }
 
 
-button {
+.button {
     border-radius: 4px;
-    padding: 24px 35px 24px;
-    font-weight: 600;
+    box-shadow: 0 16px 24px -12px rgba(0, 0, 0, 0.40) !important;
     transition: 345ms ease-out;
     cursor: pointer;
     justify-content: center;
     text-align: center;
+
+    @include responsive(desktop) {
+        padding: 26px 32px;
+    }
+}
+
+.hero {
+    .button {
+        @include responsive(phone) {
+            font-size: 1.1rem !important;
+        }
+    }
+}
+
+.shadow {
+    box-shadow: 0 16px 24px -12px rgba(0, 0, 0, 0.40);
 }
 
 .btn-container {
@@ -221,6 +238,22 @@ button {
     background-position: right top,
         bottom left;
     background-size: auto, auto;
+
+    @include responsive(phone) {
+        background-size: 45%, 25%;
+    }
+
+    @include responsive(desktop) {
+        background-size: 30%, 15%;
+    }
+
+    &.is-small {
+        background-size: 30%, 20%;
+
+        @include responsive(desktop) {
+            background-size: 15%, 10%;
+        }
+    }
 }
 
 is-centered {
@@ -248,4 +281,62 @@ is-centered {
 #lottie {
     width: 100%;
     height: 100%;
+}
+
+.accent {
+    color: #14C39A;
+    font-weight: 600;
+}
+
+span {
+    display: inline;
+}
+
+.section {
+    &.is-secondary {
+        background-color: #EBF1F1;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.20);
+    }
+}
+
+.title {
+    font-size: 1.9rem;
+}
+
+.proofi-message {
+    max-width: 100%;
+
+    @include responsive(phone) {
+        max-width: 100%;
+    }
+}
+
+//article {
+//    .title {
+//        &::after {
+//            content: '';
+//            position: absolute;
+//            background-color: aquamarine;
+//            height: 3px;
+//            border-radius: 8px;
+//            margin-top: 39px;
+//            left: 24px;
+//            width: 15%;
+//
+//            @include responsive(phone) {
+//                width: 31%;
+//            }
+//
+//        }
+//    }
+//}
+
+.usp-icon {
+    max-width: 30%;
+}
+
+.is-hidden-mobile {
+    @include responsive(phone) {
+        display: none;
+    }
 }
