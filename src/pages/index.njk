@@ -1,45 +1,110 @@
 {% set title = 'Proofi' %}
-{% set description = 'The standard for online digital transactions' %}
+{% set description = 'Sign all your communication and let your clients verify your identity for free.' %}
+{% set currentUrl = '/sitemap/' %}
 
 {% extends "base.njk" %}
 
 {% block content %}
 
-  <section class="hero stamp-bg">
+  <section class="hero is-fullheight stamp-bg">
     <div class="hero-body">
       <div class="container">
-       <div class="columns inverted-mobile is-vcentered">
-       <div class="column is-one-third">
-        <h1 class="">Don't trust, <br> verify</h1>
-          <h3 class="hero-sub muted">Spoofing, phishing and online fraud ends here. Free Proofi beta out now!</h3>
-<!--
+       <div class="columns is-vcentered is-centered-mobile inverted-mobile">
+       <div class="column is-6-desktop">
+           <h1 class="">Whatever you send<br>- sign it with <strong class="accent">Proofi</strong></h1>
+           <h3 class="hero-sub muted">Sign all your communication and let your clients verify your identity for <strong>free</strong>.</h3>
         <div class="btn-container">
-          <button class="button is-primary" id="showModal">Sign up - it's free!</button>
+         <a class="button is-primary is-medium vrlps-trigger">
+             <span class="icon is-medium"><img src="/assets/icons/new.svg" class="lazy"></span>
+             <span>Join the <strong>exclusive</strong> beta</span>
+            </a>
         </div>
--->
            </div>
-           <div class="column is-two-thirds">
-           <div id="lottie" class="is-hidden-mobile"></div>
+           <div class="column is-6-desktop">
+          <img src="/assets/img/proofi-message.svg" class="lazy proofi-message">
            </div>
-           <div class="modal">
-              <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                      <p class="modal-card-title muted">Sign up - it's free!</p>
-                      <button class="delete" aria-label="close"></button>
-                        </header>
-                        <section class="modal-card-body">
-                        </section>
-                    <footer class="modal-card-foot">
-                      <button class="button is-success">Save changes</button>
-                      <button class="button">Cancel</button>
-                    </footer>
-                </div>
-            </div>
-          </div>
       </div>
     </div>
+      </div>
   </section>
+  
+<section class="section is-medium is-secondary">
+<div class="container">
+<h2 class="has-text-centered">Why should I use <span class="accent">Proofi</span>?</h2>
+
+<div class="tile is-ancestor has-margin-top-40">
+  <div class="tile is-parent">
+    <article class="tile is-child box shadow">
+     <img src="/assets/icons/identify.svg" class="lazy usp-icon">
+      <p class="title">Identify instantly</p>
+        <p class="subtitle"></p>
+        <div class="content"><p class="muted">Start directly with sending Proofi's with your verified online identity. </p>
+        </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box shadow">
+     <img src="/assets/icons/earth.svg" class="lazy usp-icon">
+      <p class="title">Use everywhere</p>
+      <p class="subtitle"></p>
+        <div class="content"><p class="muted">Tons of apps could use more security. Proofi can integrate with all of them.</p>
+        </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box shadow">
+     <img src="/assets/icons/organization.svg" class="lazy usp-icon">
+      <p class="title">Create relations</p>
+      <p class="subtitle"></p>
+        <div class="content"><p class="muted">Manage organizational policies and permissions through the chain of trust.</p>
+        </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box shadow">
+     <img src="/assets/icons/trust.svg" class="lazy usp-icon">
+      <p class="title">Trust blindly</p>
+      <p class="subtitle"></p>
+        <div class="content"><p class="muted">The world happens online. Proofi gives that world trust, free for everyone.</p>
+        </div>
+    </article>
+  </div>
+</div>
+</div>
+</section>
 
 
+<section class="section is-medium">
+<div class="container">
+   <div class="columns is-vcentered">
+       <div class="column is-7">
+       <img src="/assets/img/proofi-explainer.svg" class="lazy">
+       </div>
+       <div class="column is-5">
+           <h2 class="">How does it work? </h2>
+           <div class="content">
+           <p class="muted">Online communication platforms dominate our daily economic transactions more and more. Whether it’s B2B, B2C, C2C or M2M.</p>
+           <p class="muted">It’s time for a solution that lets us trust our counterparties instantly. With <span class="accent">Proofi</span> you are always aware of the identity of the sender of the email or file. Completely free.</p>
+           </div>
+           <div class="btn-container">
+               <a class="button is-primary is-medium vrlps-trigger">Join the waiting list now!</a>
+           </div>
+       </div>
+   </div>
+    <h2 class=""></h2>
+</div>
+</section>
+
+
+<section class="section is-medium is-secondary stamp-bg is-small">
+<div class="container">
+    <h2 class="has-text-centered"><strong>Join the waiting list today!</strong></h2>
+    <div class="columns is-centered">
+    <div class="column is-7">
+    <h3 class="muted has-text-centered">Sign all your communication and let your clients verify<br>your identity for <strong>free</strong>.</h3>
+     </div>
+    </div>
+    <div class="btn-container has-text-centered"><a href="#" class="button is-primary is-medium vrlps-trigger"><strong>Join now</strong> - it's free!</a></div>
+    </div>
+</section>
 {% endblock %}
