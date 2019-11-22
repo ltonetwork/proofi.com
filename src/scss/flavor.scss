@@ -5,26 +5,35 @@
 
 html {
     font-size: 18px;
-    font-family: 'Nunito' !important;
+    font-family: 'Proxima Nova' !important;
 }
 
 body {
-    font-family: 'Nunito' !important;
-    font-size: 18px;
-    max-width: 3000px;
-    margin: 0 auto;
+    font-family: 'Proxima Nova' !important;
+    font-size: 20px;
     line-height: 1.56;
     letter-spacing: 0.6px;
 }
 
+::selection {
+    background-color: #14c39a;
+    color: white;
+}
+
 .footer {
-    background-color: #14C39A;
+    background-color: $proofi-dark-green;
     color: #fff;
-    max-height: 140px;
+    max-height: 200px;
 
     a {
         color: #fff;
         font-weight: 600;
+    }
+
+    img {
+        max-width: 154px;
+        margin: auto;
+        margin-bottom: 32px;
     }
 }
 
@@ -78,6 +87,19 @@ h2 + h3 {
         @include responsive(phone) {
             padding: 20px;
             margin-top: 80px;
+        }
+    }
+
+    &.is-medium {
+        .hero-body {
+            padding-top: 10rem;
+            padding-bottom: 0rem;
+
+            @include responsive (phone) {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+
+            }
         }
     }
 }
@@ -235,9 +257,61 @@ h2 + h3 {
     border-radius: 8px;
 }
 
+.stamp-bg-hero {
+    background-image: url(/assets/bg/stamp-right-top.svg),
+        url(/assets/bg/stamp-left-center.svg);
+    background-repeat: no-repeat,
+        no-repeat;
+    background-position: right top,
+        center left;
+    background-size: auto, auto;
+
+    @include responsive(phone) {
+        background-size: 45%, 25%;
+    }
+
+    @include responsive(desktop) {
+        background-size: 30%, 15%;
+    }
+
+    &.is-small {
+        background-size: 30%, 20%;
+
+        @include responsive(desktop) {
+            background-size: 15%, 10%;
+        }
+    }
+}
+
 .stamp-bg {
-    background-image: url(/assets/hero/right-top-stamp.svg),
-        url(/assets/hero/left-bottom-stamp.svg);
+    background-image: url(/assets/bg/stamp-right-top.svg),
+        url(/assets/bg/stamp-left-bottom.svg);
+    background-repeat: no-repeat,
+        no-repeat;
+    background-position: right top,
+        bottom left;
+    background-size: auto, auto;
+
+    @include responsive(phone) {
+        background-size: 45%, 25%;
+    }
+
+    @include responsive(desktop) {
+        background-size: 30%, 15%;
+    }
+
+    &.is-small {
+        background-size: 30%, 20%;
+
+        @include responsive(desktop) {
+            background-size: 15%, 10%;
+        }
+    }
+}
+
+.stamp-bg-alt {
+    background-image: url(/assets/bg/stamp-right-top_alt.svg),
+        url(/assets/bg/stamp-left-bottom_alt.svg);
     background-repeat: no-repeat,
         no-repeat;
     background-position: right top,
@@ -289,7 +363,7 @@ is-centered {
 }
 
 .accent {
-    color: #14C39A;
+    color: #14C39A !important;
     font-weight: 600;
 }
 
@@ -299,8 +373,20 @@ span {
 
 .section {
     &.is-secondary {
-        background-color: #EBF1F1;
-        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.20);
+        background-color: #F5F8F8;
+        //        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.20);
+    }
+
+    &.is-proofi-green {
+        background-color: $proofi-green;
+    }
+
+    &.hero-after {
+        padding: 9rem 0rem;
+
+        @include responsive(phone) {
+            padding: 0;
+        }
     }
 }
 
@@ -313,6 +399,14 @@ span {
 
     @include responsive(phone) {
         max-width: 100%;
+    }
+}
+
+.portal-image {
+    max-width: 95%;
+
+    @include responsive(phone) {
+        max-width: 95%;
     }
 }
 
@@ -344,4 +438,159 @@ span {
     @include responsive(phone) {
         display: none;
     }
+}
+
+.gdpr {
+    max-width: 60px;
+
+    &.is-centered {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+
+.timeline {
+    margin-top: 60px;
+    position: relative;
+
+    .proofi-green {
+        &:after {
+            content: "";
+            background-color: #14c39a;
+            height: 2px;
+            width: 280px;
+            position: absolute;
+            top: 11px;
+            left: 34px;
+            right: 0;
+
+            @include responsive (phone) {
+                content: "";
+                background-color: #14c39a;
+                height: 192px;
+                width: 2px;
+                position: absolute;
+                top: 32px;
+                left: 11px;
+                right: 0;
+            }
+        }
+    }
+
+    .oval-green {
+
+
+
+        &.sender {
+
+            &:after {
+                @include responsive (phone) {
+                    content: "";
+                    background-color: #14c39a;
+                    height: 70px;
+                    width: 2px;
+                    position: absolute;
+                    top: 32px;
+                    left: 11px;
+                    right: 0;
+                }
+            }
+        }
+
+        &.receiver {
+
+            &:after {
+                @include responsive (phone) {}
+            }
+        }
+
+        img {
+            width: 24px;
+        }
+    }
+
+    @include responsive (phone) {
+        span {
+            &.subtitle {
+                margin-left: 24px;
+
+                strong {
+                    font-size: 30px;
+                    color: #111111;
+                }
+            }
+        }
+    }
+
+    &:last-of-type {
+        margin-bottom: 60px;
+    }
+}
+
+.subtitle {
+    small {
+        font-size: 16px;
+    }
+}
+
+.timeline-content {
+    @include responsive (phone) {
+        margin-left: 50px;
+        margin-top: -36px;
+    }
+}
+
+
+.tile {
+    article {
+        &.box {
+            border: 1px solid #EBF1F1;
+            box-shadow: none;
+
+            .content {
+                padding: 40px 24px;
+
+                p {
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+}
+
+.image {
+    &.blurred {
+        filter: blur(2px);
+    }
+}
+
+.is-hidden-mobile {
+    @include responsive (phone) {
+        display: none;
+    }
+}
+
+.is-hidden-desktop {
+    @include responsive (laptop) {
+        display: none;
+    }
+}
+
+.sender {
+    @include responsive (phone) {
+        max-width: 232px;
+        margin: auto;
+    }
+}
+
+.receiver {
+    @include responsive (phone) {
+        max-width: 232px;
+        margin: auto;
+    }
+}
+
+.modal-content {
+    border-radius: 8px;
+    padding: 40px;
 }
