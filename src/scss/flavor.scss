@@ -150,6 +150,7 @@ h2 + h3 {
         position: relative;
         transition: 321ms ease-out;
         letter-spacing: normal;
+        text-decoration: none !important;
 
 
         &.navbar-item {
@@ -597,4 +598,8 @@ span {
 .modal-content {
     border-radius: 8px;
     padding: 40px;
+}
+
+textarea {
+    height: 160px !important;
 }
