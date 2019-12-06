@@ -230,10 +230,6 @@ h2 + h3 {
     cursor: pointer;
     justify-content: center;
     text-align: center;
-
-    @include responsive(desktop) {
-        padding: 26px 32px;
-    }
 }
 
 .hero {
