@@ -1,0 +1,59 @@
+{% set title = 'Welcome | Proofi' %}
+{% set description = 'Welcome to Proofi.' %}
+{% set image = "/assets/meta/meta-home.png" %}
+{% set currentUrl = '/' %}
+{% set hideFooter = 'true' %}
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+  <section class="hero is-medium stamp-bg-hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered is-centered-mobile">
+          <div class="column is-12-desktop has-text-centered">
+            <h1 class="title is-1 is-spaced has-text-black">Welcome to <strong class="accent">Proofi</strong>!</h1>
+            <h3 class="muted">Thank you for contributing towards a safer internet</h3>
+          </div>
+        </div>
+        <div class="section" id="why-proofi">
+          <div class="columns is-vcentered is-centered-mobile inverted-mobile">
+            <div class="column is-4-desktop">
+              <img src="/assets/img/welcome/plugin-1.svg" class="lazy is-pulled-left-desktop">
+              <div class="content">
+                <p>
+                  <strong>Look for the Proofi Logo</strong>
+                </p>
+                <p class="muted">After you have signed in to your Proofi Chrome extension, you can start sending your first Proofied email.</p>
+              </div>
+            </div>
+            <div class="column is-4-desktop">
+              <img src="/assets/img/welcome/plugin-2.svg" class="lazy is-pulled-left-desktop">
+              <div class="content">
+                <p>
+                  <strong>Check/Verify Proofi</strong>
+                </p>
+                <p class="muted">The receiver of the Proofied email can check the details in the Proofi portal by clicking the checkmark icon in the email.</p>
+              </div>
+            </div>
+            <div class="column is-4-desktop">
+              <img src="/assets/img/welcome/plugin-3.svg" class="lazy is-pulled-left-desktop">
+              <div class="content">
+                <p>
+                  <strong>API coming soon!</strong>
+                </p>
+                <p class="muted">Proofi is not only a SaaS product for email clients,, but can be used as an API in (your own) often-used applications to sign with!</p>
+              </div>
+            </div>
+          </div>
+          <hr class="subtle-hr">
+          <p class="has-text-centered is-size-4">
+            <a class="accent has-text-weight-normal" href="https://app.proofi.com">Got it, I want to send my first Proofi!</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
