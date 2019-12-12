@@ -8,6 +8,7 @@
 {% set ogTitle = ogTitle %}
 {% set ogDescription = ogDescription %}
 {% set ogUrl = ogUrl %}
+{% set hideFooter = hideFooter %}
 
 <head>
   <meta name="robots" content="all">
@@ -49,8 +50,9 @@
 
   {% block content %}{% endblock %}
 
-
+  {% if not hideFooter %}
   {% include "partials/footer.njk" %}
+  {% endif %}
 
   <script>window.lazyLoadOptions = { elements_selector: ".lazy" };</script>
   <script src="/js/main.js"></script>
