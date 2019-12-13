@@ -1,20 +1,27 @@
 @font-face {
-    font-family: "Proxima Nova";
-    font-display: swap;
-    src: url('/assets/fonts/Proxima Nova/Proxima Nova Light.woff2');
-    font-weight: 400
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('/assets/fonts/Proxima Nova/Proxima Nova Light.woff2');
+  font-weight: 300
 }
 
 @font-face {
-    font-family: "Nunito";
-    font-display: swap;
-    src: url('/assets/fonts/Proxima Nova/Proxima Nova Reg.woff2');
-    font-weight: 500
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('/assets/fonts/Proxima Nova/Proxima Nova Reg.woff2');
+  font-weight: 400
 }
 
 @font-face {
-    font-family: "Proxima Nova";
-    font-display: swap;
-    src: url('/assets/fonts/Proxima Nova/Proxima Nova Bold.woff2');
-    font-weight: 600
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('/assets/fonts/Proxima Nova/Proxima Nova SemiBold.woff2');
+  font-weight: 500
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('/assets/fonts/Proxima Nova/Proxima Nova Bold.woff2');
+  font-weight: 600
 }
