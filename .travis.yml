@@ -12,8 +12,8 @@ branches:
 
 before_install:
   # Configure Git
-  - git config --global user.email "travis-ci@legalthings.net"
-  - git config --global user.name "Travis CI"
+  - git config --local user.name "LTO Network"
+  - git config --local user.email "info@ltonetwork.com"
 
   # Get all tags of git repo
   - git fetch origin 'refs/tags/*:refs/tags/*'
@@ -32,7 +32,7 @@ deploy:
     local_dir: dist/
     skip_cleanup: true
     github_token:
-      secure: "WE0hXmWsbZmRfiXjRdgb/43Eb9xwLYtCjsTsCT7sc7LEqCe/eK2WCQG6fnfJ0+pCs1wOkGPp/TYXbrRtzz0VeIQX4LZy5tFCN9yN92FS0AFqlci9FPSPFiX5eOZCmg3Sb9XIevt0a+7wLL8tbP72obqB/LfORoGHwhGhB+mmvWOiUiM8ARQnP7M2afxisbOC7qA1OOCx7Q+LfiRoJupwdcUBapMWkUCG08LuHtM4CQGTzBGdkNaeWIABH90atT3xo8CfxDSg9Qnr5aoZHbXsltp9GS96PukWZnicBbAFuGzgpepDS5PsDJa51cMnDJv+Z+9n8r17TK49zLSHSYZqYCY2cXAImbdcl4QK7AKPBi0fzAIvBWjm7MIvQxEOSDG9iwfFUC12w1N/pFbl3mtXh38MDeuYtOvjNREDTkE1L5uEWBjwX9L4svebmZo0ISSD1I/XtW0ZF3lRBlT4tkFZCjcRyJL64uNYl+s8q5v2AUKglbSOrO8SG8wxkVfsPr64JNICdVZgPNqENLc+wwaFoRupZOUxDYgadlpWAdrHvexXICeHH/MkFnoYpC1WAvP7plqUNowqrxVJYKN6rI8OP4aAErK/pQirLxa/T19YDT3UUMQwtOhqaaVvJboNvaciqTviZncfw8RArJRGSHCX/ZEGhIBaZ3mzzJkEgqqU+3k="
+      secure: dTEKv2PUHA2LwlhkCtCUOWPq0qq8Z7ojLAXLt1ggQoC5efakzkw+fSoLlg+HqPdyrjq4MOF1sWmwaEjxB6o4ApwwrmE/XjD8Lb2GkQPwyQzVUa5saxMf1xMzobRZpddhvUXe1yiY+oEXe40/ud0uMWI5AqUduUCiOlobMJzCJSSDCbzdAuOfjtcdKIF5REpZAvsgTzNtxYVZVjSr8vDzqZFU9eyYYPdwTq1jE70V0t+P8k7DVJutXYk2nyVp8z7XyB/MRbsEc68sFGSnhckJzI6Xxbj7swNvi66Q+B8vxBeqlzWIu1V7KvnsoBBvhdkfDdZAr5DJdTax9zm7jwt2EN3fz+QuKXFm53N1P+IyI63hHT9fj+llxJ2inQnPe7a7Lh7alMwdPAjZBmTPg3devirhdPae46WGtXhnfgVk002c4toHFC4sUBaGLYh3JFu7Niu2ELo1dSC01MxN4Q4P3ogHfUosQbhAbDJAlMAQ1NCfarCYA7b+zGLc3rsYar1i8vs3/J46UCRHYtUwgH5yLCndMjMNbYFBVO94e4y77t1l3RpPn89b4dIszC5AkGtzXEQ2ezLdNgTLrqGLhZGb8eD/8GI8BkJfmYMykb9ukOvnSIMqUy0vMD/25+ZgT6WwB2SSy3cD869FgjgugHUuOCZz0sBQTNUCaFqsLrjRhJk=
     keep_history: true
     on:
       branch: master
