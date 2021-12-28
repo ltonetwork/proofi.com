@@ -46,7 +46,9 @@
 
 
 <body>
+  {% if not hideNavigation %}
   {% include "partials/navigation.njk" %}
+  {% endif %}
 
   {% block content %}{% endblock %}
 
