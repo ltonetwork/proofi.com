@@ -567,6 +567,13 @@ span {
     }
 }
 
+.image2 {
+    &.blurred {
+        filter: blur(1px);
+    }
+    width: 100%;
+}
+
 .is-hidden-mobile {
     @include responsive (phone) {
         display: none;
