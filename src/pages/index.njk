@@ -1,25 +1,459 @@
 {% set title = 'Proofi' %}
-{% set description = 'Identification for DeFi' %}
+{% set description = 'Get verified once, skip KYC forever.' %}
 {% set image = "/assets/meta/meta-home.png" %}
 {% set currentUrl = '/' %}
-{% set hideNavigation = true %}
 
 
 {% extends "base.njk" %}
 
 {% block content %}
 
-<section class="hero is-medium stamp-bg-hero" style="min-height: calc(100vh - 247px)">
+ <section class="hero is-medium stamp-bg-hero">
     <div class="hero-body">
         <div class="container">
             <div class="columns is-vcentered is-centered-mobile">
-                <div class="column">
-                  <img src="/assets/logo/proofi-black.svg">
-                  <h3 class="hero-sub-muted">Coming Q2 2022</h3>
+                <div class="column is-6-desktop">
+                    <div class="tags are-small">
+                        <span class="tag is-link is-light">BETA LAUNCHED</span>
+                    </div>
+                    <h1 class="title is-1 is-spaced has-text-black">Identification for DeFi by <strong class="accent">Proofi</strong></h1>
+                    <h3 class="hero-sub muted">Get verified once, skip KYC forever.</h3>
+                    <div class="buttons btn-container">
+                        <a class="button is-primary is-medium" href="https://app.proofi.com/">
+                            <span class="icon is-medium"><img src="/assets/icons/new.svg" class="lazy"></span>
+                            <span>Start <strong>now</strong>.</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-6-desktop">
+                    <img src="/assets/img/temp-head.png" style="max-width: 85%; margin-top: 50px; margin-left: 20px" class="lazy proofi-message">
+                </div>
+            </div>
+            <div class="section hero-after" id="why-proofi">
+                <div class="columns is-vcentered is-centered-mobile inverted-mobile">
+                    <div class="column is-6-desktop">
+                        <img src="/assets/img/portal.png" class="lazy portal-image is-pulled-left-desktop is-rounded shadow">
+                    </div>
+                    <div class="column is-6-desktop">
+                        <h2 class="title is-2 is-spaced has-text-black has-text-weight-bold">Why <span class="accent">Proofi?</span></h2>
+                        <div class="content">
+                            <p class="muted">Allow qualified, known users to participate in permissioned markets. Liquidity providers, dApp developers, and institutional participants can manage risk while creating trust in the DeFi ecosystem.</p>
+                            <p class="muted">First impressions are everything, but required KYC/AML complicate onboarding procedures, making them frustrating for new clients.</p>
+                            <p class="muted"><span class="accent">Proofi</span> fixes this problem once and for all by issuing verifiable credentials that can be used everywhere.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section class="section is-small is-secondary" id="security" style="scroll-margin-top: 80px;">
+    <div class="container">
+        <h2 class="title is-2 is-spaced has-text-centered has-text-weight-bold">Cross-chain identities</h2>    
+        <div class="columns is-centered">
+            <div class="column is-6">
+                <div class="has-text-centered"> <br>
+                    <img src="/assets/img/ETH.png" style="width: 80px; padding-right: 20px" class="lazy">
+                    <img src="/assets/img/SOL.png" style="width: 110px; padding-right: 20px" class="lazy"> 
+                    <img src="/assets/img/BSC.png" style="width: 90px" class="lazy"> 
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="has-text-centered title is-4">
+                    Powered by
+                </div>
+                <div class="has-text-centered">
+                    <img src="/assets/img/chainlink-logo.svg" style="width: 300px" class="lazy"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section is-medium has-background-white" id="how-it-works">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-5 has-text-centered">
+                <h2 class="title is-2 is-spaced has-text-weight-bold">How does it work?</h2>
+                <div class="content">
+                    <p class="muted">All you need is yes or no. You don’t need to store the client’s private information. You only need to know if the person is legally permitted to participate in your project. Proofi makes this easily possible for you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-centered is-hidden-mobile">
+            <picture class="image2">
+                <img src="/assets/img/proofi-explainer.svg" class="lazy">
+            </picture>
+        </div>
+        <div class="columns is-centered is-hidden-desktop">
+            <picture class="image">
+                <img src="/assets/img/sender.svg" class="lazy sender">
+            </picture>
+        </div>
+        <div class="columns">
+            <div class="column is-3 is-hidden-desktop">
+                <div class="timeline">
+                    <span class="oval-green sender">
+                        <picture><img src="/assets/icons/oval.svg" class="lazy"></picture>
+                    </span><span class="subtitle"><strong>Sender</strong></span>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="timeline">
+                    <span class="proofi-green">
+                        <picture><img src="/assets/icons/green.svg" class="lazy"></picture>
+                    </span>
+                </div>
+                <div class="content timeline-content">
+                    <h3 class="subtitle"><strong>Identify</strong></h3>
+                    <p class="muted">Users verify their KYC data through <span class="accent">Proofi</span> once.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="timeline">
+                    <span class="proofi-green">
+                        <picture><img src="/assets/icons/green.svg" class="lazy"></picture>
+                    </span>
+                </div>
+                <div class="content timeline-content">
+                    <h3 class="subtitle"><strong>Security</strong></h3>
+                    <p class="muted"><span class="accent">Proofi</span> securely stores the sensitive information. You unburden your organization from regulation costs and procedures.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="timeline">
+                    <span class="proofi-green">
+                        <picture><img src="/assets/icons/green.svg" class="lazy"></picture>
+                    </span>
+                </div>
+                <div class="content timeline-content">
+                    <h3 class="subtitle"><strong>Verify</strong></h3>
+                    <p class="muted">Verifiable credentials are established.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="timeline">
+                    <span class="proofi-green">
+                        <picture><img src="/assets/icons/green.svg" class="lazy"></picture>
+                    </span>
+                </div>
+                <div class="content timeline-content">
+                    <h3 class="subtitle"><strong>Permission</strong></h3>
+                    <p class="muted">Projects query user data for eligible participation without the need for users to share privacy information. All done cross-chain.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3 is-hidden-desktop">
+                <div class="timeline">
+                    <span class="oval-green receiver">
+                        <picture><img src="/assets/icons/oval.svg" class="lazy"></picture>
+                    </span><span class="subtitle"><strong>Receiver</strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-centered is-hidden-desktop">
+            <picture class="image">
+                <img src="/assets/img/receiver.svg" class="lazy receiver">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<section class="section is-medium is-proofi-green stamp-bg-alt is-small" id="for-who">
+    <div class="container">
+        <h2 class="title is-2 has-text-white has-text-centered"><strong class="has-text-white">Proofi</strong> for everyone</h2>
+        <div class="tile is-ancestor has-margin-top-40">
+            <div class="tile is-parent">
+                <article class="tile is-child box has-text-centered">
+                    <div class="content">
+                        <p class="title is-4">DeFi</p>
+                        <p class="subtitle is-6 muted">Specify requirements for your project (like excluded countries and/or minimum age). Query for a YES or NO.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box has-text-centered">
+                    <div class="content">
+                        <p class="title is-4">Exchanges</p>
+                        <p class="subtitle is-6 muted">Be a trusted source for DeFi & provide additional regulatory compliance by enabling KYC-verified decentralized wallets.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box has-text-centered">
+                    <div class="content">
+                        <p class="title is-4">Liquidity providers</p>
+                        <p class="subtitle is-6 muted">Allow qualified, known users to participate in permissioned markets.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box has-text-centered">
+                    <div class="content">
+                        <p class="title is-4">Marketplace</p>
+                        <p class="subtitle is-6 muted">Fight back against bots and only allow real verified users on your marketplace.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-medium is-secondary" id="applications">
+    <div class="container">
+    <!--
+        <div class="columns is-centered">
+            <div class="column is-6">
+                <div class="tags are-small is-centered">
+                    <span class="tag is-black">COMING SOON</span>
+                </div>
+                <h2 class="title is-2 is-spaced has-text-centered has-text-weight-bold">Where does <span class="accent">Proofi</span> work?</h2>
+                <div class="content has-text-centered">
+                    <p class="muted">Use <span class="accent">Proofi</span> in all your favourite business applications to add a security layer to your day-to-day operations</p>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-ancestor has-margin-top-40">
+            <div class="tile is-parent">
+                <article class="tile is-child box has-text-centered">
+                    <picture class="image is-centered blurred">
+                        <img src="/assets/img/email-fraud.svg" class="lazy">
+                    </picture>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box has-text-centered">
+                    <picture class="image is-centered blurred">
+                        <img src="/assets/img/fake-invoices.svg" class="lazy">
+                    </picture>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box has-text-centered">
+                    <picture class="image is-centered blurred">
+                        <img src="/assets/img/file-transfers.svg" class="lazy">
+                    </picture>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box has-text-centered">
+                    <picture class="image is-centered blurred">
+                        <img src="/assets/img/payments.svg" class="lazy">
+                    </picture>
+                </article>
+            </div>
+        </div>
+    -->
+        <div class="has-margin-top-40" id="api">
+            <div class="columns is-centered">
+                <div class="column is-6">
+                    <h2 class="title is-2 is-spaced has-text-centered has-text-weight-bold">The API</h2>
+                    <h3 class="subtitle is-2 is-spaced has-text-centered has-text-weight-bold muted">Three ways to query</h3>
+                </div>
+            </div>
+
+            <div class="columns is-centered columns-list">
+                <div class="column is-4">
+                    <img class="numbering" src="/assets/img/1.svg">
+                    <div>
+                        <h3 class="column-title">Smart contract integration</h3>
+                        Your DeFi smart contract can use Chainlink Any API to query Proofi directly for a yes or no answer.
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <img class="numbering" src="/assets/img/2.svg">
+                    <div>
+                        <h3 class="column-title">Wallet signature</h3>
+                        Prompt the user to sign a message via their crypto wallet. The signature provides pre-approved permissions when querying Proofi.
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <img class="numbering" src="/assets/img/3.svg">
+                    <div>
+                        <h3 class="column-title">OpenID connect</h3>
+                        Redirect the user from your website to Proofi with OpenID connect. Unverified users will be asked to go through the KYC procedure to continue.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section is-medium has-background-white stamp-bg is-small" id="join-the-movement">
+    <div class="container">
+        <h2 class="title is-2 has-text-centered has-text-weight-bold">Lead the movement</h2>
+        <div class="columns is-centered">
+            <div class="column is-7">
+                <h3 class="muted has-text-centered">The Internet of Trust is being built one step at a time. Are you ready for the future of KYC? Integrate Proofi and grant your users ease of verification and control over their data. Contact us to get started!</h3>
+            </div>
+        </div>
+        <div class="buttons btn-container has-text-centered is-centered">
+        <a class="button is-primary is-outlined is-medium modal-button" data-target="modal-contact">Contact us</a></div>
+    </div>
+</section>
+
+
+                <div id="modal-contact" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content has-background-white">
+                        <div class="columns">
+                            <div class="column">
+                                <div id="mc_embed_signup">
+                                    <form action="https://proofi.us4.list-manage.com/subscribe/post?u=29b91314a0d2fd39fc1a947c8&amp;id=9f6cc78eac&REASON=contactform" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                           <h2 class="title is-3 is-spaced">Shoot us a message!</h2>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-FNAME" class="label">First Name <span class="asterisk">*</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input type="text" value="" name="FNAME" class="input required" id="mce-FNAME">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-LNAME" class="label">Last Name <span class="asterisk">*</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input type="text" value="" name="LNAME" class="input required" id="mce-LNAME">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-LOCATION" class="label">Location <small>(country)</small> <span class="asterisk">*</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input type="text" value="" name="LOCATION" class="input required" id="mce-LOCATION">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-EMAIL" class="label">Email Address <span class="asterisk">*</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input type="email" value="" name="EMAIL" class="input required email" id="mce-EMAIL">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-COMPANY" class="label">Company </label>
+                                                    <div class="control">
+                                                        <input type="text" value="" name="COMPANY" class="input" id="mce-COMPANY">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-MESSAGE" class="label">Message </label>
+                                                    <div class="control">
+                                                        <textarea type="text" value="" name="MESSAGE" class="input" id="mce-MESSAGE"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="mce-responses" class="clear">
+                                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                                <div class="response" id="mce-success-response" style="display:none"></div>
+                                            </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_29b91314a0d2fd39fc1a947c8_9f6cc78eac" tabindex="-1" value=""></div>
+                                            <div class="field clear">
+                                                <div class="control">
+                                                    <input type="submit" value="Send" name="send" id="mc-embedded-subscribe" class="button is-primary">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+                <div id="modal-newsletter" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content has-background-white">
+                        <div class="columns">
+                            <div class="column">
+                                <div id="mc_embed_signup">
+                                    <form action="https://proofi.us4.list-manage.com/subscribe/post?u=29b91314a0d2fd39fc1a947c8&amp;id=9f6cc78eac&REASON=newslettter" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                           <h2 class="title is-3 is-spaced">Stay up to date!</h2>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-FNAME" class="label">First Name <span class="asterisk">*</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input type="text" value="" name="FNAME" class="input required" id="mce-FNAME">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-LNAME" class="label">Last Name <span class="asterisk">*</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input type="text" value="" name="LNAME" class="input required" id="mce-LNAME">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-LOCATION" class="label">Location <small>(country)</small> <span class="asterisk">*</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input type="text" value="" name="LOCATION" class="input required" id="mce-LOCATION">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-EMAIL" class="label">Email Address <span class="asterisk">*</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input type="email" value="" name="EMAIL" class="input required email" id="mce-EMAIL">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="mc-field-group">
+                                                    <label for="mce-COMPANY" class="label">Company </label>
+                                                    <div class="control">
+                                                        <input type="text" value="" name="COMPANY" class="input" id="mce-COMPANY">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="mce-responses" class="clear">
+                                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                                <div class="response" id="mce-success-response" style="display:none"></div>
+                                            </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_29b91314a0d2fd39fc1a947c8_9f6cc78eac" tabindex="-1" value=""></div>
+                                            <div class="field clear">
+                                                <div class="control">
+                                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button is-primary">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+
+
+
 
 {% endblock %}
