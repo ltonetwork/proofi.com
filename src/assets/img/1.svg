@@ -4,15 +4,15 @@
 	 viewBox="0 0 750 750" style="enable-background:new 0 0 750 750;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#14C39B;}
-	.st1{display:none;fill:#FFFFFF;}
+	.st1{display:none;fill:#FFFFFF;enable-background:new    ;}
 	.st2{font-family:'Overpass-Bold';}
 	.st3{font-size:375px;}
 	.st4{fill:#FFFFFF;}
 </style>
 <g>
-	<circle class="st0" cx="375" cy="375" r="309.84"/>
+	<circle class="st0" cx="375" cy="375" r="309.8"/>
 </g>
 <text transform="matrix(1 0 0 1 300.0012 503.6612)" class="st1 st2 st3">1</text>
 <text transform="matrix(1 0 0 1 253.0012 496.6612)" class="st1 st2 st3">2</text>
-<text transform="matrix(1 0 0 1 261.0012 509.6612)" class="st4 st2 st3">3</text>
+<text transform="matrix(1 0 0 1 311.0012 509.6612)" class="st4 st2 st3">1</text>
 </svg>

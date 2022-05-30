@@ -616,3 +616,26 @@ textarea {
   margin-bottom: 16px;
 
 }
+
+.column-title {
+    font-weight: bold;
+}
+
+.columns-list {
+    > .column {
+        position: relative;
+    }
+
+    .numbering {
+        position: absolute;
+        width: 150px;
+        left: -30px;
+        top: -60px;
+        opacity: 0.2;
+    }
+
+    .numbering + div {
+        position: relative;
+        z-index: 100;
+    }
+}
